@@ -3,9 +3,9 @@ const { existsSync } = require('fs')
 const { Sequelize } = require('sequelize');
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
-const DB_URL =  process.env.DATABASE_URL || 'postgres://koyeb-adm:aDqzw0Ank5cI@ep-tight-unit-a19lr606.ap-southeast-1.pg.koyeb.app/koyebdb';
+const DB_URL =  process.env.DATABASE_URL || 'mongodb+srv://snyderseth961:Liya@mrfg.svmsaa5.mongodb.net/';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || 'inrl~ff3dfeoM105dafb2a7d07cb6f4c8cdf68102', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'inrl~a92e1yMK798b147b7617add8cc655e7a690d', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -40,7 +40,7 @@ module.exports = {
     AUDIO_DATA : process.env.AUDIO_DATA || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
     STICKER_DATA : process.env.STICKER_DATA || "inrl;inrl",
     BRAINSHOP: process.env.BRAINSHOP || '172372,nbjE0YAlyw3cpoMl',
-    SUDO : process.env.SUDO || "94765476552",
+    SUDO : process.env.SUDO || "94776860011",
     RMBG_KEY: process.env.RMBG_KEY,
     OPEN_AI: process.env.OPEN_AI,
     ELEVENLABS: process.env.ELEVENLABS,
